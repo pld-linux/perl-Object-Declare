@@ -7,18 +7,15 @@
 Summary:	Object::Declare - Declarative object constructor
 Summary(pl.UTF-8):	Object::Declare - deklaratywny konstruktor obiektów
 Name:		perl-Object-Declare
-Version:	0.22
+Version:	0.25
 Release:	1
 License:	MIT
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Object/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9607cd7b485bd7e01c3286f1dd8df187
+Source0:	https://www.cpan.org/modules/by-module/Object/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	7935e4bbf574a300a46a6227ba4b2fa4
 URL:		http://search.cpan.org/dist/Object-Declare/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-BuildRequires:	perl-Sub-Override
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
